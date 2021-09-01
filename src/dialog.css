@@ -1,0 +1,11 @@
+/* DIALOG STYLE */
+#joplin-plugin-content {
+  min-width: 300px;
+}
+
+textarea {
+  padding: 4px;
+  resize: vertical;
+  width: auto !important;
+  word-break: break-all;
+}
