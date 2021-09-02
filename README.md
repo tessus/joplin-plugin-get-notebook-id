@@ -1,6 +1,6 @@
 # Get Notebook ID
 
-Copy/Show the ID of a notebook. For developers. A standard user won't need this.
+Copy/Show the ID of a notebook. For developers. A regular user won't need this.
 
 # Settings
 
