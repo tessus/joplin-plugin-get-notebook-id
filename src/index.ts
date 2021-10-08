@@ -21,7 +21,7 @@ joplin.plugins.register({
 						const selectedFolder = await joplin.workspace.selectedFolder();
 						folderId = selectedFolder.id;
 					}
-					navigator.clipboard.writeText(folderId);
+					await joplin.clipboard.writeText(folderId);
 
 					const folder = await joplin.data.get(['folders', folderId]);
 					console.info(JSON.stringify(folder));
@@ -61,7 +61,7 @@ joplin.plugins.register({
 
 					const result = await dialogs.open(nbDialog);
 					if (result.id === 'copy') {
-						navigator.clipboard.writeText(folderId);
+						await joplin.clipboard.writeText(folderId);
 					}
 
 					await joplin.commands.execute('editor.focus');
